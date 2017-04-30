@@ -1,0 +1,460 @@
+@charset "utf-8";
+.page {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  background-color: #29abe2;
+}
+.page h1 {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+.page h2 {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+.page input {
+  text-align: center;
+}
+.page button {
+  color: white;
+  background-color: #00b7b5;
+  border: 1px solid white;
+}
+.page .admin_team {
+  height: 600px;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  border: 1px solid white;
+}
+.page .admin_team .mode_team {
+  height: 500px;
+  width: 30%;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.page .admin_team .mode_team .add_team {
+  height: 300px;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_team .mode_team .add_team .add_teams {
+  height: 60px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_team .mode_team .add_team .add_teams p {
+  color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+.page .admin_team .mode_team .add_team .add_teams .add_team_infor {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5px;
+}
+.page .admin_team .mode_team .add_team .submit {
+  height: 40%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+.page .admin_team .mode_team .dele_team {
+  height: 200px;
+  width: 100%;
+  float: left;
+  border: 1px solid white;
+}
+.page .admin_team .mode_team .dele_team .dele_teams {
+  height: 70px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_team .mode_team .dele_team .dele_teams p {
+  color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+.page .admin_team .mode_team .dele_team .dele_teams .dele_team_id {
+  height: 30px;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 4px;
+}
+.page .admin_team .mode_team .dele_team .btn_dele {
+  height: 30px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5px;
+}
+.page .admin_team .team_list {
+  height: 500px;
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.page .admin_team .team_list .get_team_list {
+  height: auto;
+  width: 80%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10%;
+  border: 1px solid white;
+}
+.page .admin_team .team_list .get_team_list table {
+  height: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+.page .admin_team .team_list .get_team_list table tr td {
+  height: 30px;
+  width: 60px;
+  border: 1px solid white;
+}
+.page .admin_team .mode_mmr {
+  height: 300px;
+  width: 30%;
+  float: right;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.page .admin_team .mode_mmr .mod_teams {
+  height: 80px;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_team .mode_mmr .mod_teams p {
+  color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+.page .admin_team .mode_mmr .mod_teams .mode_team_id {
+  height: 25px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 4px;
+}
+.page .admin_team .mode_mmr .mod_teams .mode_team_mmr {
+  height: 25px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 4px;
+}
+.page .admin_team .mode_mmr .mod_teams .mod_dele_mmr {
+  height: 30px;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 35%;
+}
+.page .admin_match {
+  height: 630px;
+  width: 80%;
+  margin-left: 10%;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match {
+  height: auto;
+  width: 30%;
+  margin-top: 10px;
+  float: left;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match p {
+  color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+.page .admin_match .mode_match .add_match {
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match .add_match .add_match_detail {
+  height: 60px;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match .add_match .add_match_detail .add_match_inf {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5px;
+}
+.page .admin_match .mode_match .add_match .add_match_detail .btn_add_match {
+  height: 30px;
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 30%;
+}
+.page .admin_match .mode_match .dele_match {
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match .dele_match .dele_match_detail {
+  height: 60px;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match .dele_match .dele_match_detail .dele_match_id {
+  height: 20px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5px;
+}
+.page .admin_match .mode_match .dele_match .dele_match_detail .btn_dele_match {
+  height: 30px;
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 30%;
+}
+.page .admin_match .match_list {
+  height: auto;
+  width: 45%;
+  margin-top: 10px;
+  float: left;
+  border: 1px solid white;
+}
+.page .admin_match .match_list .get_match_list {
+  height: auto;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_match .match_list .get_match_list table {
+  height: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+.page .admin_match .match_list .get_match_list table tr td {
+  height: 30px;
+  width: 60px;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match_state {
+  height: 300px;
+  width: 25%;
+  float: right;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match_state .dele_matchs {
+  height: 60px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_match .mode_match_state .dele_matchs p {
+  color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+.page .admin_match .mode_match_state .dele_matchs .mode_ids_infor {
+  height: 20px;
+  width: 40%;
+  margin-top: 5px;
+  margin-left: 30%;
+}
+.page .admin_match .mode_match_state .dele_matchs .btn_mode_match_state {
+  height: 30px;
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 30%;
+}
+.page .admin_item {
+  height: 550px;
+  width: 80%;
+  margin-left: 10%;
+  border: 1px solid white;
+}
+.page .admin_item p {
+  color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+.page .admin_item input {
+  height: 20px;
+  width: 40%;
+  margin-top: 2px;
+  margin-left: 30%;
+}
+.page .admin_item button {
+  height: 30px;
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 30%;
+}
+.page .admin_item .mode_item {
+  height: 550px;
+  width: 30%;
+  float: left;
+  border: 1px solid white;
+}
+.page .admin_item .mode_item .add_item {
+  height: 360px;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_item .mode_item .add_item .item_infor {
+  height: 60px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_item .mode_item .dele_item {
+  height: 180px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_item .mode_item .dele_item .dele_item_infor {
+  height: 60px;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_item .item_list {
+  height: 550px;
+  width: 40%;
+  float: left;
+  border: 1px solid white;
+}
+.page .admin_item .item_list .item_table {
+  width: 90%;
+  height: 500px;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_item .item_list .item_table table {
+  height: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+.page .admin_item .item_list .item_table table tr {
+  height: 20px;
+  width: 100%;
+}
+.page .admin_item .item_list .item_table table tr td {
+  border: 1px solid white;
+}
+.page .admin_item .mode_prize {
+  height: 300px;
+  width: 30%;
+  float: right;
+  border: 1px solid white;
+}
+.page .admin_item .mode_prize .mode_item_prize {
+  height: 60px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_live {
+  height: 650px;
+  width: 80%;
+  margin-left: 10%;
+  border: 1px solid white;
+}
+.page .admin_live p {
+  color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+.page .admin_live input {
+  height: 20px;
+  width: 40%;
+  margin-top: 2px;
+  margin-left: 30%;
+}
+.page .admin_live button {
+  height: 30px;
+  width: 40%;
+  margin-top: 15px;
+  margin-left: 30%;
+}
+.page .admin_live .mode_live {
+  height: 620px;
+  width: 30%;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.page .admin_live .mode_live .add_lives {
+  height: 400px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_live .mode_live .add_lives .add_live {
+  height: 60px;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_live .mode_live .del_lives {
+  height: 200px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}
+.page .admin_live .mode_live .del_lives .del_live {
+  height: 60px;
+  width: 100%;
+  border: 1px solid white;
+}
+.page .admin_live .live_list {
+  height: 620px;
+  width: 40%;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.page .admin_live .live_list .live_table {
+  height: 500px;
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid white;
+}
+.page .admin_live .live_list .live_table table {
+  height: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+.page .admin_live .live_list .live_table table tr {
+  height: 20px;
+  width: 100%;
+}
+.page .admin_live .live_list .live_table table tr td {
+  border: 1px solid white;
+}
+.page .admin_live .mode_live_data {
+  height: 500px;
+  width: 30%;
+  float: left;
+  border: 1px solid white;
+}
+.page .admin_live .mode_live_data .mode_lives_infor {
+  height: 60px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dotaMax后台管理</title>
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/server.css">
+</head>
+<body>
+    <div class="tab-wrapper clearfix">
+        <h2>后台管理</h2>
+        <ul>
+            <!--<li>直播信息</li>
+            <li>商城列表</li>
+            <li>比赛信息</li>
+            <li>战队排行</li>-->
+            <li>
+                <router-link to="/live">直播信息</router-link>
+            </li>
+            <li>
+                <router-link to="/shop">商城列表</router-link>
+            </li>
+            <li>
+                <router-link to="/match">比赛信息</router-link>
+            </li>
+            <li>
+                <router-link to="/team">战队排行</router-link>
+            </li>
+        </ul>
+        <div class="content">
+            <router-view></router-view>
+        </div>
+    </div>
+</body>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../node_modules/vue-resource/dist/vue-resource.min.js"></script>
+<script src="../node_modules/vue-router/dist/vue-router.min.js"></script>
+<script src="../public/js/server.js"></script>
+</html>

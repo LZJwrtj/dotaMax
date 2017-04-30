@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <style>
+        input{
+            width: 40px;
+            height: 20px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world!</h1>
+    <input type="button" value="按钮" class="btn">
+</body>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $('.btn').click(function () {
+            /*$.ajax({
+                url: 'getInfo',
+                type: 'GET',
+                dataType: 'json',
+                success: function (res) {
+                    var data = res.data;
+                    console.log(data);
+                    $('h1').html(data[0].name);
+                    data.forEach(function (data) {
+                        var p = document.createElement('p');
+                        p.innerHTML = data.name;
+                        $('body').append(p);
+                    })
+                },
+                error: function (res) {
+                    console.log(res.status)
+                }
+            })
+        })
+        $.ajax({
+            url: 'login',
+            type: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                console.log(res)
+            }/!*,
+            error: function (res) {
+                console.log(res.status)
+            }*!/*/
+            $.ajax({
+                url: 'dotaMax-api/getAllData',
+                type: 'GET',
+                dataType: 'json',
+                success: function (res) {
+//                    var data = res.data;
+                    console.log(res);
+                },
+                error: function (res) {
+                    console.log(res.status)
+                }
+            })
+        })
+    </script>
+</html>

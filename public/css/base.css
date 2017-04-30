@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* reset */
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal; }
+li { list-style:none; }
+a { text-decoration:none; color: #000; cursor: pointer; }
+img { border:none; vertical-align:top; }
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+/* end reset */
+.clearfix{
+    _zoom: 1;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+body{
+    background-color: rgb(33, 33, 33);
+    margin: 0;
+    font: 12px/1.5 Arial, 'Droid Sans', 'Hiragino Sans GB', 'Microsoft YaHei';
+    /* text-shadow: rgb(17, 17, 17) 1px 1px 0px; */
+    line-height: 20px;
+    color: #ddd;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}

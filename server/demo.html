@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var reply = { live:
+        [
+            { ID: 1,
+            src: '../public/img/live1.jpg',
+            title: '风吹的我喘不过气',
+            name: 'yyfyyf',
+            watchNum: '419370',
+            platform: 'douyu'
+            },
+            { ID: 2,
+                src: '../public/img/live2.jpg',
+                title: 'Cold的直播间 只想吃个鸡',
+                name: 'Pc冷冷',
+                watchNum: '51355',
+                platform: 'douyu'
+            },
+            { ID: 3,
+                src: '../public/img/live3.jpg',
+                title: '令人窒息的表演',
+                name: 'ChuaN黄福全',
+                watchNum: '4126',
+                platform: 'douyu'
+            }
+        ]
+    }
+    console.log(reply);
+    console.log(reply.live);
+    var a = reply.live.filter(function (item) {
+        return item.ID != 1;
+    })
+    reply.live = a
+    console.log(reply)
+</script>
+</body>
+</html>

@@ -1,0 +1,511 @@
+@charset "utf-8";
+.page {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  background-color: #29abe2;
+
+  h1 {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+  }
+  h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  input {
+    text-align: center;
+  }
+  button {
+    color: white;
+    background-color: #00b7b5;
+    border: 1px solid white;
+  }
+  .admin_team {
+    height: 600px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    border: 1px solid white;
+
+    .mode_team {
+      height: 500px;
+      width: 30%;
+      float: left;
+      margin-top: 10px;
+      border: 1px solid white;
+
+      .add_team {
+        height: 300px;
+        width: 100%;
+        border: 1px solid white;
+
+        .add_teams {
+          height: 60px;
+          width: 90%;
+          margin-left: 5%;
+          border: 1px solid white;
+
+          p {
+            color: white;
+            margin-top: 4px;
+            text-align: center;
+          }
+          .add_team_infor {
+            width: 40%;
+            margin-left: 30%;
+            margin-top: 5px;
+          }
+        }
+        .submit {
+          height: 40%;
+          width: 40%;
+          margin-left: 30%;
+          margin-top: 20px;
+        }
+      }
+      .dele_team {
+        height: 200px;
+        width: 100%;
+        float: left;
+        border: 1px solid white;
+
+        .dele_teams {
+          height: 70px;
+          width: 90%;
+          margin-left: 5%;
+          border: 1px solid white;
+
+          p {
+            color: white;
+            margin-top: 4px;
+            text-align: center;
+          }
+          .dele_team_id {
+            height: 30px;
+            width: 30%;
+            margin-left: 35%;
+            margin-top: 4px;
+          }
+        }
+        .btn_dele {
+          height: 30px;
+          width: 40%;
+          margin-left: 30%;
+          margin-top: 5px;
+        }
+      }
+    }
+    .team_list {
+      height: 500px;
+      width: 30%;
+      float: left;
+      margin-left: 5%;
+      margin-top: 10px;
+      border: 1px solid white;
+
+      .get_team_list {
+        height: auto;
+        width: 80%;
+        float: left;
+        margin-top: 10px;
+        margin-left: 10%;
+        border: 1px solid white;
+
+        table {
+          height: auto;
+          width: 100%;
+          color: white;
+          text-align: center;
+          border-collapse: collapse;
+          border: 1px solid white;
+
+          tr {
+
+            td {
+              height: 30px;
+              width: 60px;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    .mode_mmr {
+      height: 300px;
+      width: 30%;
+      float: right;
+      margin-top: 10px;
+      border: 1px solid white;
+
+      .mod_teams {
+        height: 80px;
+        width: 100%;
+        border: 1px solid white;
+
+        p {
+          color: white;
+          margin-top: 4px;
+          text-align: center;
+        }
+        .mode_team_id {
+          height: 25px;
+          width: 40%;
+          margin-left: 30%;
+          margin-top: 4px;
+        }
+        .mode_team_mmr {
+          height: 25px;
+          width: 40%;
+          margin-left: 30%;
+          margin-top: 4px;
+        }
+        .mod_dele_mmr {
+          height: 30px;
+          width: 30%;
+          margin-top: 20px;
+          margin-left: 35%;
+
+        }
+      }
+    }
+  }
+
+  .admin_match {
+    height: 630px;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid white;
+
+    .mode_match {
+      height: auto;
+      width: 30%;
+      margin-top: 10px;
+      float: left;
+      border: 1px solid white;
+
+      p {
+        color: white;
+        margin-top: 4px;
+        text-align: center;
+      }
+      .add_match {
+        height: auto;
+        width: 90%;
+        margin-left: 5%;
+        border: 1px solid white;
+
+        .add_match_detail {
+          height: 60px;
+          width: 100%;
+          border: 1px solid white;
+
+          .add_match_inf {
+            width: 40%;
+            margin-left: 30%;
+            margin-top: 5px;
+          }
+          .btn_add_match {
+            height: 30px;
+            width: 40%;
+            margin-top: 15px;
+            margin-left: 30%;
+          }
+        }
+      }
+      .dele_match {
+        height: auto;
+        width: 90%;
+        margin-left: 5%;
+        border: 1px solid white;
+
+        .dele_match_detail {
+          height: 60px;
+          width: 100%;
+          border: 1px solid white;
+
+          .dele_match_id {
+            height: 20px;
+            width: 40%;
+            margin-left: 30%;
+            margin-top: 5px;
+          }
+          .btn_dele_match {
+            height: 30px;
+            width: 40%;
+            margin-top: 15px;
+            margin-left: 30%;
+          }
+        }
+      }
+    }
+    .match_list {
+      height: auto;
+      width: 45%;
+      margin-top: 10px;
+      float: left;
+      border: 1px solid white;
+
+      .get_match_list {
+        height: auto;
+        width: 100%;
+        border: 1px solid white;
+
+        table {
+          height: auto;
+          width: 100%;
+          color: white;
+          text-align: center;
+          border-collapse: collapse;
+          border: 1px solid white;
+
+          tr {
+
+            td {
+              height: 30px;
+              width: 60px;
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    .mode_match_state {
+      height: 300px;
+      width: 25%;
+      float: right;
+      margin-top: 10px;
+      border: 1px solid white;
+
+      .dele_matchs {
+        height: 60px;
+        width: 90%;
+        margin-left: 5%;
+        border: 1px solid white;
+
+        p {
+          color: white;
+          margin-top: 4px;
+          text-align: center;
+        }
+        .mode_ids_infor {
+          height: 20px;
+          width: 40%;
+          margin-top: 5px;
+          margin-left: 30%;
+        }
+        .btn_mode_match_state {
+          height: 30px;
+          width: 40%;
+          margin-top: 15px;
+          margin-left: 30%;
+        }
+      }
+    }
+  }
+
+  .admin_item {
+    height: 550px;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid white;
+
+    p {
+      color: white;
+      margin-top: 4px;
+      text-align: center;
+    }
+    input {
+      height: 20px;
+      width: 40%;
+      margin-top: 2px;
+      margin-left: 30%;
+    }
+    button {
+      height: 30px;
+      width: 40%;
+      margin-top: 15px;
+      margin-left: 30%;
+    }
+    .mode_item {
+      height: 550px;
+      width: 30%;
+      float: left;
+      border: 1px solid white;
+
+      .add_item {
+        height: 360px;
+        width: 100%;
+        border: 1px solid white;
+
+        .item_infor {
+          height: 60px;
+          width: 90%;
+          margin-left: 5%;
+          border: 1px solid white;
+        }
+      }
+      .dele_item {
+        height: 180px;
+        width: 90%;
+        margin-left: 5%;
+        border: 1px solid white;
+
+        .dele_item_infor {
+          height: 60px;
+          width: 100%;
+          border: 1px solid white;
+        }
+      }
+    }
+    .item_list {
+      height: 550px;
+      width: 40%;
+      float: left;
+      border: 1px solid white;
+
+      .item_table {
+        width: 90%;
+        height: 500px;
+        margin-left: 5%;
+        border: 1px solid white;
+
+        table {
+          height: auto;
+          width: 100%;
+          color: white;
+          text-align: center;
+          border-collapse: collapse;
+          border: 1px solid white;
+
+          tr {
+            height: 20px;
+            width: 100%;
+
+            td {
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    .mode_prize {
+      height: 300px;
+      width: 30%;
+      float: right;
+      border: 1px solid white;
+
+      .mode_item_prize {
+        height: 60px;
+        width: 90%;
+        margin-left: 5%;
+        border: 1px solid white;
+      }
+    }
+  }
+
+  .admin_live {
+    height: 650px;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid white;
+
+    p {
+      color: white;
+      margin-top: 4px;
+      text-align: center;
+    }
+    input {
+      height: 20px;
+      width: 40%;
+      margin-top: 2px;
+      margin-left: 30%;
+    }
+    button {
+      height: 30px;
+      width: 40%;
+      margin-top: 15px;
+      margin-left: 30%;
+    }
+    .mode_live {
+      height: 620px;
+      width: 30%;
+      float: left;
+      margin-top: 10px;
+      border: 1px solid white;
+
+      .add_lives {
+        height: 400px;
+        width: 90%;
+        margin-left: 5%;
+        border: 1px solid white;
+
+        .add_live {
+          height: 60px;
+          width: 100%;
+          border: 1px solid white;
+        }
+      }
+      .del_lives {
+        height: 200px;
+        width: 90%;
+        margin-left: 5%;
+        border: 1px solid white;
+
+        .del_live {
+          height: 60px;
+          width: 100%;
+          border: 1px solid white;
+        }
+      }
+    }
+    .live_list {
+      height: 620px;
+      width: 40%;
+      float: left;
+      margin-top: 10px;
+      border: 1px solid white;
+
+      .live_table {
+        height: 500px;
+        width: 100%;
+        margin-top: 5px;
+        border: 1px solid white;
+
+        table {
+          height: auto;
+          width: 100%;
+          color: white;
+          text-align: center;
+          border-collapse: collapse;
+          border: 1px solid white;
+
+          tr {
+            height: 20px;
+            width: 100%;
+
+            td {
+              border: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+    .mode_live_data {
+      height: 500px;
+      width: 30%;
+      float: left;
+      border: 1px solid white;
+
+      .mode_lives_infor {
+        height: 60px;
+        width: 90%;
+        margin-left: 5%;
+        border: 1px solid white;
+      }
+    }
+  }
+}

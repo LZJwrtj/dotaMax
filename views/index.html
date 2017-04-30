@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>dotaMax</title>
+    <link rel="stylesheet" href="../public/css/font-awesome.css">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/index.css">
+</head>
+<body>
+    <div id="header">
+        <div class="header-wrapper">
+            <div class="logo">
+                <a href=""><img src="../public/img/max_logo3.png" alt=""></a>
+            </div>
+            <ul class="nav clearfix">
+                <li class="nav_list active"><a href="">首页</a></li>
+                <li class="nav_list">
+                    <a href="">数据</a>
+                    <ol>
+                        <li><a href="">英雄</a></li>
+                        <li><a href="">物品</a></li>
+                    </ol>
+                </li>
+                <li class="nav_list"><a href="">职业</a></li>
+                <li class="nav_list"><a href="">玩家</a></li>
+                <li class="nav_list"><a href="">天梯</a></li>
+                <li class="nav_list">
+                    <a href="">直播</a>
+                    <ol>
+                        <li><a href="">直播</a></li>
+                        <li><a href="">视频</a></li>
+                    </ol>
+                </li>
+                <li class="nav_list"><a href="">APP</a></li>
+                <li class="last_list"><a href="">商城</a></li>
+            </ul>
+            <div class="login">
+                <a class="loginIn" href="">登录</a>
+                <a href="register">注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="topbar">
+        <div class="topbar-wrapper">
+            <div class="link"><a href="">首页</a></div>
+            <div class="search">
+                <form action="">
+                    <input type="text" class="search_text" placeholder="输入国服昵称或数字ID" >
+                    <input type="submit" value="Go" class="search_btn">
+                </form>
+            </div>
+            <div class="download-wrapper">
+                <div class="pic">
+                    <img src="../public/img/qr_in_one.png" alt="">
+                </div>
+                <div class="download">
+                    <span>Dotamax移动端</span>
+                    <a href="">
+                        <i class="fa fa-apple"></i>
+                        iOS下载
+                    </a>
+                    <a href="">
+                        <i class="fa fa-android"></i>
+                        安卓下载
+                    </a>
+                </div>
+            </div>
+            <p>Dota2全球在线: <span>833041</span></p>
+        </div>
+    </div>
+    <div id="main" class="clearfix">
+        <div class="title">
+            <i class="fa fa-calendar-plus-o"></i>活动专题
+        </div>
+        <div class="activity">
+            <div class="activity_left">
+                <a href=""><img src="../public/img/job_bar.jpg" alt=""></a>
+            </div>
+            <div class="activity_center">
+                <a href=""><img src="../public/img/max_app.jpg" alt=""></a>
+            </div>
+            <div class="activity_right">
+                <a href=""><img src="../public/img/fb677a639904c057dbf36c661bce0b9c" alt=""></a>
+            </div>
+        </div>
+        <div class="content_left">
+            <div class="live">
+                <div class="title">
+                    <i class="fa fa-calendar-plus-o"></i>直播
+                    <span class="more"><i class="fa fa-plus-square"></i>More</span>
+                </div>
+                <ul class="live_list clearfix">
+                    <li v-for="live in lives">
+                        <a href="">
+                            <div class="live_pic">
+                                <img :src="live.src" alt="">
+                                <div class="play_shadow">
+                                    <img src="http://cdn.maxjia.com/image/play.png" alt="">
+                                </div>
+                            </div>
+                            <p class="live_title">{{live.title}}</p>
+                            <div class="clearfix live_bottom" style="padding: 0 6px;">
+                                <div class="live_name">{{live.name}}</div>
+                                <span><i class="fa fa-map-marker"></i>{{live.platform}}</span>
+                                <span><i class="fa fa-eye"></i>{{live.watchNum}}</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="shop">
+                <div class="title">
+                    <i class="fa fa-calendar-plus-o"></i>M币商城
+                    <span class="more"><i class="fa fa-plus-square"></i>More</span>
+                </div>
+                <ul class="shop_list clearfix">
+                    <li v-for="shop in shops">
+                        <a href="">
+                            <div class="shop_pic">
+                                <img v-bind:src="shop.img_url" alt="">
+                            </div>
+                            <div class="price">
+                                {{shop.cost}} M币
+                            </div>
+                            <div class="name" :style="{color:shop.qualityColor}"><span v-show="shop.qualityName!= '标准'">{{shop.qualityName}}</span>{{shop.name}}</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="league">
+                <div class="title">
+                    <i class="fa fa-calendar-plus-o"></i>职业联赛
+                    <span class="more"><i class="fa fa-plus-square"></i>More</span>
+                </div>
+                <ul class="league_list clearfix">
+                    <li v-for="league in leagues">
+                        <a href="">
+                            <img :src="league.src" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_right">
+            <div class="schedule">
+                <div class="title">
+                    <i class="fa fa-calendar-plus-o"></i>赛程
+                </div>
+                <table class="schedule_content">
+                    <thead>
+                    <tr>
+                        <td class="td1">对战战队</td>
+                        <td class="td2">开始时间</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="match in matchs">
+                            <td class="td1" style="position: relative;">
+                                <div class="team1">
+                                    <p><span><img :src="match.country_src1" alt=""></span><span>{{match.team1}}</span></p>
+                                </div>
+                                <span class="vs">vs</span>
+                                <div class="team2">
+                                    <p class="fl"><span><img :src="match.country_src1" alt=""></span><span>{{match.team2}}</span></p>
+                                </div>
+                            </td>
+                            <td class="td2">
+                                <div>{{match.time}}</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="teamRank">
+                <div class="title">
+                    <i class="fa fa-calendar-plus-o"></i>战队排名
+                    <span class="more"><i class="fa fa-plus-square"></i>More</span>
+                </div>
+                <table class="rank_content">
+                    <thead>
+                        <tr>
+                            <td class="td1">排名</td>
+                            <td class="td2">战队</td>
+                            <td class="td3">MMR</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="rank in ranks">
+                            <td class="td1">
+                                {{rank.num}}
+                            </td>
+                            <td class="td2">
+                                <span><img :src="rank.country" alt=""></span><span>{{rank.team}}</span>
+                            </td>
+                            <td class="td3">{{rank.MMR}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="top"><i class="fa fa-chevron-up"></i></div>
+    <div id="footer">
+        <div class="footer-wrapper">
+            <div class="footer_left fl">
+                <ul class="list1">
+                    <li>
+                        <a href=""><i class="fa fa-envelope"></i>
+                            <!--<div class="des des1">商务合作</div>-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-heartbeat"></i>
+                            <!--<div class="des des2">状态</div>-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-qq"></i>
+                            <!--<div class="des des3">反馈群：74188215</div>-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-question-circle"></i>
+                            <!--<div class="des des4">FAQ</div>-->
+                        </a>
+                    </li>
+                </ul>
+                <span class="span1">dotamax.com</span>
+                <span class="span2">友情链接</span>
+            </div>
+            <div class="footer_center">
+                <img src="../public/img/logo_01.png" alt="">
+            </div>
+            <div class="footer_right fr">
+                <ul class="list2">
+                    <li><a class="active" href="">加入我们</a></li>
+                    <li><a href="">录入数据</a></li>
+                    <li><a href=""><i class="fa fa-tencent-weibo"></i></a></li>
+                    <li><a href=""><i class="fa fa-weibo"></i></a></li>
+                    <li><a href=""><i class="fa fa-bar-chart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/mockjs/dist/mock-min.js"></script>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../node_modules/vue-resource/dist/vue-resource.js"></script>
+<script src="../public/js/index.js"></script>
+<script src="../public/js/mock.js"></script>
+</html>
