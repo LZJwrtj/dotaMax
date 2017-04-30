@@ -7,7 +7,7 @@
 
 ### 流程图
 
-![预览](https://github.com/LZJwrtj/dotaMax/public/img/flowsheet.png)
+![预览](https://github.com/LZJwrtj/dotaMax/blob/master/public/img/flowsheet.png)
 
 ### 后台运行
 
